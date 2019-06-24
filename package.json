@@ -1,0 +1,17 @@
+{
+  "name": "curly-q",
+  "version": "0.0.1",
+  "description": "Replace quotes with curly quotes",
+  "main": "dist/index.js",
+  "repository": "git@github.com:smfoote/curly-q.git",
+  "author": "Steven Foote <sfoote@linkedin.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "test": "yarn build && jest"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "typescript": "^3.5.2"
+  }
+}
