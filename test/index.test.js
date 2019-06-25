@@ -6,6 +6,7 @@ test('Replaces single quotes', () => {
   expect(replaceQuotes(` ' `)).toBe(' \u2019 ');
   expect(replaceQuotes(`Hello world'`)).toBe('Hello world\u2019');
   expect(replaceQuotes(`'Hello world`)).toBe('\u2018Hello world');
+  expect(replaceQuotes(`\u2019Hello world`)).toBe('\u2018Hello world');
 });
 
 test('Replaces double quotes', () => {
@@ -14,4 +15,5 @@ test('Replaces double quotes', () => {
   expect(replaceQuotes(` " `)).toBe(' \u201D ');
   expect(replaceQuotes(`Hello world"`)).toBe('Hello world\u201D');
   expect(replaceQuotes(`"Hello world`)).toBe('\u201CHello world');
+  expect(replaceQuotes(`\u201DHello world`)).toBe('\u201CHello world');
 });
