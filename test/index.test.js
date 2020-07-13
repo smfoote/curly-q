@@ -7,6 +7,7 @@ test('Replaces single quotes', () => {
   expect(replaceQuotes(`Hello world'`)).toBe('Hello world\u2019');
   expect(replaceQuotes(`'Hello world`)).toBe('\u2018Hello world');
   expect(replaceQuotes(`\u2019Hello world`)).toBe('\u2018Hello world');
+  expect(replaceQuotes(`It's okay`)).toBe('It\u2019s okay');
 });
 
 test('Replaces double quotes', () => {
